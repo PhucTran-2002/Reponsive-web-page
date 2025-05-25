@@ -1,0 +1,201 @@
+.hero {
+    background-image: url("/assets/img/background_img.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    object-fit: cover;
+
+    &__nav {
+        display: flex;
+        padding: 35px;
+
+        &-mobile {
+            display: none;
+
+            .hero__menu-toggle {
+                background: none;
+                font-size: 1.5rem;
+                border: none;
+                cursor: pointer;
+            }
+
+            .hero__nav-btn {
+                background: #f44336;
+                color: #fff;
+                padding: 0.4rem 1rem;
+                border-radius: 5px;
+                text-decoration: none;
+                margin-left: 1rem;
+            }
+
+            @media (max-width: 768px) {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
+        }
+
+        &-list {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+            margin-left: auto;
+            
+
+            li a {
+                text-decoration: none;
+                color: #000;
+                margin-left: auto;
+                font-weight: 700;
+        
+            }
+
+            .hero__nav-btn {
+                background: #f44336;
+                color: white;
+                padding: 10px 20px;
+                border-radius: 5px;
+            }
+
+            @media (max-width: 768px) {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                margin-top: 1rem;
+
+                &.show {
+                    display: flex;
+                }
+            }
+        }
+    }
+  /* SCSS phuc */
+  .newsletter {
+      display: flex;
+      align-items: center;
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 10px;
+      max-width: 502px;
+      
+
+      &__input {
+          flex: 1;
+          border: none;
+          padding: 12px 16px;
+          font-size: 16px;
+          outline: none;
+          color: #555;
+
+          &::placeholder {
+              color: #aaa;
+          }
+      }
+
+      &__button {
+          background-color: #f44336;
+          color: white;
+          padding: 12px 24px;
+          border: none;
+          border-radius: 8px;
+          font-size: 16px;
+          cursor: pointer;
+          white-space: nowrap;
+      }
+
+      // Responsive for tablets and below
+      @media (max-width: 768px) {
+          
+          gap: 10px;
+
+          &__input,
+          &__button {
+            font-size: 15px;
+            
+          }
+      }
+
+      // Optional: tweak for small phones
+      @media (max-width: 480px) {
+          &__button {
+              padding: 10px;
+          }
+
+          &__input {
+              padding: 10px;
+          }
+      }
+  }
+ &__description{
+        margin-bottom: 50px;
+        margin-top: 20px;
+        @media (max-width: 768px) {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 23px;
+                text-align: center;
+                margin-top: 30px;
+            }
+        }
+    
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 2rem;
+        margin-left: 122px;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+            margin: 0;
+        }
+    }
+
+    &__title {
+        font-size: 4em;
+        font-weight: 800;
+        line-height: 82px;
+       
+
+        @media (max-width: 500px) {
+            font-size: 2.625em;
+            line-height: 57.5px;
+            font-weight: 800;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    &__form {
+        display: flex;
+        gap: 0.5rem;
+        margin-top: 1rem;
+
+        @media (max-width: 500px) {
+            flex-direction: column;
+        }
+    }
+
+    &__input {
+        flex: 1;
+        padding: 0.6rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    &__button {
+        background-color: #f44336;
+        color: white;
+        padding: 0.6rem 1.2rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        position: absolute;
+          left: 5px;
+    }
+    
+    
+}

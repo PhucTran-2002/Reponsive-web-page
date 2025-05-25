@@ -1,0 +1,83 @@
+$primary-color: #f44336;
+$text-white: #fff;
+
+.test-benefits {
+    background: $primary-color url('/assets/img/test_benefits.png') no-repeat center center;
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
+ 
+    color: $text-white;
+    text-align: center;
+
+    &__overlay{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(216, 35, 7, 0.86);
+        padding: 60px 20px;
+
+    }
+
+    &__container {
+        max-width: 1440px;
+        margin: 0 auto;
+    
+    }
+
+    &__title {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    &__subtitle {
+        font-size: 1rem;
+        margin-bottom: 40px;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+    }
+
+    &__item {
+      
+        padding: 20px;
+      
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    &__text {
+        font-size: 1rem;
+        flex: 1;
+        margin-right: 10px;
+    }
+
+    &__icon {
+        font-size: 1.2rem;
+        color: $text-white;
+    }
+    &__icon_mobi{
+        display: none;
+    }
+        @media (max-width: 768px) {
+            &__icon {
+                    font-size: 1.2rem;
+                    color: $text-white;
+                    display: none;
+                }
+            
+                &__icon_mobi {
+                    display: block; 
+                padding: 40px 160px;      }
+
+        }
+}

@@ -1,0 +1,164 @@
+.services {
+    padding: 160px 122px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    @media (max-width: 768px) {
+        padding:90px 20px;
+    }
+
+    &__item {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        align-items: center;
+
+        &--text-left {
+            .services__content {
+                order: 1;
+            }
+
+            .services__image {
+                order: 2;
+            }
+             @media (max-width: 768px) {
+                .services__content{
+                    order: 2;
+                }
+                .services__image{
+                    order: 1;
+                }
+
+                        }
+        }
+
+        &--text-right {
+            .services__image {
+                order: 1;
+            }
+
+            .services__content {
+                order: 2;
+            }
+        }
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+            text-align: center;
+            .services__image {
+                    width: 100%;
+                    max-width: 335px;
+                    aspect-ratio: 335 / 315;
+                    overflow: hidden;
+                    &__desktop{
+                        display: none;
+                    }
+            
+                    &__mobile {
+                       display: block;
+                       max-width: 335px;
+                       height: 312px;
+                       border-radius: 8px;
+                        object-fit: cover;
+                        order: 1;
+                    }       }
+
+            .services__title{
+                display: none;
+                &__mobile{
+                    display: block;
+                    font-size: 2.25em;
+                    font-weight: 700;
+                    line-height: 41.5px;
+                    align-items: center;
+                }
+
+            }
+            .services__description{
+                display: none;
+                &__mobile{
+                    display: block;
+                    font-size: 0.875em;
+                        font-weight: 400;
+                        align-items: center;
+                        line-height: 28.5px;
+                        color: #808080;
+                        margin-top: 20px;
+
+                }
+
+            }
+            .services_button{
+                padding: 12px 147px;
+
+            }
+           
+            
+    }
+    }
+
+    &__content {
+        
+    }
+
+    &__title {
+        font-size: 4em;
+        margin-bottom: 40px;
+        font-weight: 700;
+        line-height: 76px;
+        &__mobile{
+            display: none;
+        }
+        
+    }
+    
+
+
+    &__description {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+        color: #808080;
+        line-height: 32ppx;
+        font-weight: 400;
+        &__mobile{
+            display: none;
+        }
+    }
+
+    &__button {
+       // padding: 0.75rem 1.5rem;
+        background-color: #f44336;
+        border: none;
+        border-radius: 8px;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        padding: 12px 58px;
+
+        &:hover {
+            background-color: #d32f2f;
+        }
+                @media (max-width: 768px) {
+                    padding: 12px 120px;
+                    margin-top: 40px;
+                }
+    }
+
+    &__image {
+        width: 100%;
+        overflow: hidden;
+        img {
+            max-width: 504px;
+            height: 480px;
+            border-radius: 8px;
+            object-fit: cover;
+            
+        }
+        &__mobile{
+            display: none;
+        }
+        
+        }
+    } 

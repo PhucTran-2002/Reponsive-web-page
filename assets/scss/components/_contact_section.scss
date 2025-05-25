@@ -1,0 +1,76 @@
+.contact {
+    text-align: center;
+    padding: 4rem 1rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__icon {
+        margin-bottom: 1.5rem;
+
+        img {
+            max-width: 120px;
+            height: 120px;
+        }
+    }
+
+    &__title {
+        font-size: 3rem;
+        font-weight: 800;
+        margin-bottom: 0.75rem;
+        color: #000;
+        line-height: 32px;
+    }
+
+    &__text {
+        font-size: 1rem;
+        color: #444;
+        margin-bottom: 1.5rem;
+        max-width: 400px;
+        font-weight: 500;
+        line-height: 18px;
+        padding-top: 20px;
+    }
+
+    &__button {
+        background-color: #f44336;
+        color: #fff;
+        padding: 25px 40px;
+        font-weight: 600;
+        font-size: 0.95rem;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: #d32f2f;
+        }
+    }
+
+    // Responsive
+    @media (max-width: 768px) {
+        padding: 2rem 1rem;
+
+        &__title {
+            font-size: 1.5rem;
+        }
+
+        &__text {
+            font-size: 0.95rem;
+        }
+
+        &__button {
+            font-size: 0.9rem;
+            padding: 0.6rem 1.2rem;
+        }
+
+        &__icon {
+            img {
+                max-width: 90px;
+                height: 90px;
+            }
+        }
+    }
+}

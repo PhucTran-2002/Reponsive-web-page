@@ -1,0 +1,56 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+
+input,
+select,
+textarea {
+    background-color: transparent;
+    outline: none;
+}
+
+
+
+body {
+
+    overflow-x: hidden;
+    line-height: 1.6; 
+    font-family: "Manrope", sans-serif;
+    margin: 0;
+}
+
+ul {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+h2 {
+    text-transform: uppercase;
+    display: block;
+       
+}
+
+/*img {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}*/
+button:focus-visible {
+    outline: 2px solid #4a90e2 !important;
+    outline: -webkit-focus-ring-color auto 5px !important;
+}
