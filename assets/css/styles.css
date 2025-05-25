@@ -305,7 +305,7 @@ button:focus-visible {
 .test-benefits__overlay {
   width: 100%;
   height: 100%;
-  background-color: rgba(216, 35, 7, 0.86);
+  background-color: rgba(247, 79, 53, 0.86);
   padding: 60px 20px;
 }
 .test-benefits__container {
@@ -743,7 +743,6 @@ button:focus-visible {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
   padding-top: 1.5rem;
   font-size: 0.9rem;
   order: 2;
