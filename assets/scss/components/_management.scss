@@ -21,6 +21,8 @@ $text-white: #fff;
     &__container {
         max-width: 1440px;
         margin: 0 auto;
+        align-items: center;
+        text-align: center;
     
     }
 
@@ -28,6 +30,7 @@ $text-white: #fff;
         font-size: 2rem;
         font-weight: bold;
         margin-bottom: 10px;
+       
     }
 
     &__subtitle {
@@ -43,7 +46,7 @@ $text-white: #fff;
 
     &__item {
       
-        padding: 20px;
+        //padding: 20px;
       
         display: flex;
         align-items: center;
@@ -58,7 +61,12 @@ $text-white: #fff;
     &__text {
         font-size: 1rem;
         flex: 1;
+        font-weight: 700;
         margin-right: 10px;
+        @media (max-width: 768px) {
+            font-size: 18px;
+                font-weight: 700;
+            }
     }
 
     &__icon {
